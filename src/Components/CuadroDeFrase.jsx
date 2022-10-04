@@ -2,14 +2,15 @@ import Frase from "./Frase";
 import Homero from "./Homero";
 
 
-const CuadroDeFrase = () => {
+const CuadroDeFrase = ({personaje}) => {
+
     return (
-        <article className="my-5 mx-1 py-3 bg-white row">
-            <Homero></Homero>
-            <Frase></Frase>
+        <article className="my-5 mx-1 p-3 bg-white row">
+            <Homero personaje={personaje}></Homero>
+            <Frase personaje={personaje}></Frase>
 
         </article>
     );
 };
 
-export default CuadroDeFrase;
+export default CuadroDeFrase; 
